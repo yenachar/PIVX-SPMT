@@ -32,7 +32,7 @@ class TabRewards:
 
         # --- Initialize Selection
         self.selectedRewards = None
-        self.lastClickedRow = None  
+        self.lastClickedRow = None
         self.feePerKb = MINIMUM_FEE
         self.suggestedFee = MINIMUM_FEE
 
@@ -230,7 +230,7 @@ class TabRewards:
     def onCancel(self):
         self.ui.rewardsList.box.clearSelection()
         self.selectedRewards = None
-        self.lastClickedRow = None  
+        self.lastClickedRow = None
         self.ui.selectedRewardsLine.setText("0.0")
         self.suggestedFee = MINIMUM_FEE
         self.updateFee()
